@@ -1,13 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types"; //npm пакет для отлавливания ошибок
+import styles from "./Profile.module.css"; //подключение стилей
 
 function ListProfile({ stats }) {
   return (
-    <ul className="stats">
+    <ul className={styles.stats}>
       {Object.entries(stats).map((stat, idx) => (
         <li key={idx}>
-          <span className="label"> {stat[0]} </span>
-          <span className="quantity"> {stat[1]} </span>
+          <span className={styles.label}> {stat[0]} </span>
+          <span className={styles.quantity}> {stat[1]} </span>
         </li>
       ))}
     </ul>

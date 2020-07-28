@@ -1,0 +1,58 @@
+.flexCustom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.margPadAuto {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.profile {
+    composes: flexCustom;
+    composes: margPadAuto;
+
+    width: 428px;
+    min-height: 504px;
+
+}
+
+.description {
+    composes: flexCustom;
+    composes: margPadAuto;
+
+    width: 272px;
+    min-height: 330px;
+
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
+}
+
+.stats {
+    composes: margPadAuto;
+
+    width: 272px;
+    min-height: 80px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    list-style: none;
+    border: 1px solid rgb(228, 233, 240);
+    background-color: rgb(243, 246, 249);
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    text-align: center;
+}
+
+.label {
+    display: flex;
+    text-transform: uppercase;
+}

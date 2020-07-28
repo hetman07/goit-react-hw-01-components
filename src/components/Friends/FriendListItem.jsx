@@ -1,12 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types"; //npm пакет для отлавливания ошибок
+import styles from "./Friends.module.css"; //подключение стилей
 
 function FriendListItem({ friends }) {
   return friends.map((friend) => (
-    <li className="item" key={friend.id}>
-      <span className="status">{friend.isOnline}</span>
-      <img className="avatar" src={friend.avatar} alt="" width="48" />
-      <p className="name">{friend.name}</p>
+    <li className={styles.item} key={friend.id}>
+      <span
+        className={friend.isOnline ? styles.statusOn : styles.statusOff}
+      ></span>
+      <img className={styles.avatar} src={friend.avatar} alt="" width="48" />
+      <p className={styles.name}>{friend.name}</p>
     </li>
   ));
 }

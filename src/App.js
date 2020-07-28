@@ -5,7 +5,7 @@ import user from "./user.json";
 import statistics from "./statistical-data.json";
 import friends from "./friends.json";
 import transactions from "./transactions.json";
-import "./App.css";
+
 import Statistics from "./components/Statistics/Statistics";
 import ListStat from "./components/Statistics/ListStat";
 import FriendList from "./components/Friends/FriendList";

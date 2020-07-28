@@ -1,0 +1,28 @@
+th {
+    font-weight: normal;
+    color: #039;
+    padding: 10px 15px;
+}
+
+td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+}
+
+tr:nth-child(2n) {
+    background: #e8edff;
+}
+
+.transactionHistory {
+    margin: 0 auto;
+    width: 872px;
+    min-height: 300px;
+    color: rgb(92, 105, 117);
+    font-size: 16px;
+    font-family: "HelveticaNeueCyr";
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 3px;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.25);
+}

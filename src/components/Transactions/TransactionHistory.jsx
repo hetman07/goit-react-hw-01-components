@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types"; //npm пакет для отлавливания ошибок
+import styles from "./Transactions.module.css"; //подключение стилей
 
 function TransactionHistory({ items }) {
   return (
-    <table className="transaction-history">
+    <table className={styles.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
