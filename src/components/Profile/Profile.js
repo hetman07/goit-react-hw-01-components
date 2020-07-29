@@ -6,9 +6,10 @@ function Profile({ name, tag, location, avatar, children }) {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
-        <img src={avatar} alt="user avatar" className="avatar" />
-        <p className="name"> {name} </p> <p className="tag"> @{tag} </p>{" "}
-        <p className="location"> {location} </p>{" "}
+        <img src={avatar} alt="user avatar" className={styles.avatar} />
+        <p className={styles.name}> {name} </p>{" "}
+        <p className={styles.tag}> @{tag} </p>{" "}
+        <p className={styles.location}> {location} </p>{" "}
       </div>{" "}
       {children}{" "}
     </div>

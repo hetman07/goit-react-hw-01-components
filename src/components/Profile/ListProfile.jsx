@@ -6,7 +6,7 @@ function ListProfile({ stats }) {
   return (
     <ul className={styles.stats}>
       {Object.entries(stats).map((stat, idx) => (
-        <li key={idx}>
+        <li className={styles.listStats} key={idx}>
           <span className={styles.label}> {stat[0]} </span>
           <span className={styles.quantity}> {stat[1]} </span>
         </li>
@@ -24,4 +24,3 @@ ListProfile.propTypes = {
 };
 
 export default ListProfile;
-//console.log()
